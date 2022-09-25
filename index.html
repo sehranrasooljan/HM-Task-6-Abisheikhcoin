@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbhishekCoin</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0px;
+    }
+
+
+    .heading
+    {
+        margin-top: 1px;
+        text-align: center;
+        width: 100%;
+     
+    }
+    .section1{
+        margin: 10px;
+    }
+    .code{
+        font-weight: strong;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    
+    }
+    a:hover
+    {
+        color: red;
+        text-decoration: underline;
+    }
+    footer{
+        text-align: center;
+        margin-top: 20px;
+        background-color: grey;
+        padding: 20px;
+        justify-content: center;
+        color: white;
+        cursor:pointer;
+
+    }
+</style>
+<body>
+
+  <div class="heading">
+    
+<h1>
+<a href="https://www.google.com/">Abisheikhcoin</a> </h1>
+<h6>The future of decentralized meme currency is here..</h6>
+
+  </div>
+  <div class="section1">
+    <h5>
+        What is AbhishekCoin
+    </h5>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa quia excepturi quaerat temporibus, consequatur corporis adipisci! Nam fugit soluta fuga praesentium rerum atque, neque eligendi, nostrum magni magnam, rem harum laboriosam a iusto molestias! Cumque numquam culpa doloremque dolore eius minus rerum? Recusandae perspiciatis cum dolorem ea molestiae eaque commodi repellat, esse nostrum! Debitis aspernatur laborum libero saepe quos quod, ipsam adipisci repellat voluptatum est excepturi in culpa obcaecati consequatur consequuntur rerum tempore sunt. Similique est in natus exercitationem! Modi itaque possimus est cum sunt atque dolor in maxime qui! Iusto dolorem exercitationem inventore reiciendis rem repellendus quis quo nulla sit! Praesentium iusto enim temporibus et amet, exercitationem repudiandae nostrum tempore? Provident beatae eius obcaecati error consequatur quod cum? Assumenda ea magnam cumque praesentium blanditiis rerum neque quos molestias quisquam numquam libero sapiente, quam autem architecto cupiditate nemo vero pariatur dolore commodi. Voluptate rem repellat commodi ab ipsam id ducimus repellendus asperiores molestias architecto maiores in ut expedita pariatur aspernatur excepturi officia, sapiente, dicta nobis qui odio velit at? Iste explicabo sed necessitatibus voluptate quidem minus recusandae quaerat sequi, temporibus incidunt ipsa enim consequuntur sapiente sit illo facere impedit amet nulla exercitationem et quibusdam quos. Atque, consequatur! Cupiditate, exercitationem repellat.
+        <h1>
+            Algorithm
+        </h1>
+        <div class="code">
+            <pre>
+                
+#include <iostream>
+    using namespace std;
+     
+    // Data structure to store a binary tree node
+    struct Node
+    {
+        int data;
+        Node *left, *right;
+     
+        Node(int data)
+        {
+            this->data = data;
+            this->left = this->right = nullptr;
+        }
+    };
+     
+    // Function to perform preorder traversal on a given binary tree
+    void preorder(Node* root)
+    {
+        if (root == nullptr) {
+            return;
+        }
+     
+        cout << root->data << " ";
+        preorder(root->left);
+        preorder(root->right);
+    }
+     
+    // Function to invert a given binary tree using preorder traversal
+    void invertBinaryTree(Node* root)
+    {
+        // base case: if the tree is empty
+        if (root == nullptr) {
+            return;
+        }
+     
+        // swap left subtree with right subtree
+        swap(root->left, root->right);
+     
+        // invert left subtree
+        invertBinaryTree(root->left);
+     
+        // invert right subtree
+        invertBinaryTree(root->right);
+    }
+     
+    int main()
+    {
+        /* Construct the following tree
+                  1
+                /   \
+               /     \
+              2       3
+             / \     / \
+            4   5   6   7
+        */
+     
+        Node* root = new Node(1);
+        root->left = new Node(2);
+        root->right = new Node(3);
+        root->left->left = new Node(4);
+        root->left->right = new Node(5);
+        root->right->left = new Node(6);
+        root->right->right = new Node(7);
+     
+        invertBinaryTree(root);
+        preorder(root);
+     
+        return 0;
+    }
+    
+            </pre>
+        </div>
+</p>
+<hr>
+    <div class="section1">
+        <h5>
+            Where Do I Start
+        </h5>
+       <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa quia excepturi quaerat temporibus, consequatur corporis adipisci! Nam fugit soluta fuga praesentium rerum atque, neque eligendi, nostrum magni magnam, rem harum laboriosam a iusto molestias! Cumque numquam culpa doloremque dolore eius minus rerum? Recusandae perspiciatis cum dolorem ea molestiae eaque commodi repellat, esse nostrum! Debitis aspernatur laborum libero saepe quos quod, ipsam adipisci repellat voluptatum est excepturi in culpa obcaecati consequatur consequuntur rerum tempore sunt. Similique est in natus exercitationem! Modi itaque possimus est cum sunt atque dolor in maxime qui! Iusto dolorem exercitationem inventore reiciendis rem repellendus quis quo nulla sit! Praesentium iusto enim temporibus et amet, exercitationem repudiandae nostrum tempore? Provident beatae eius obcaecati error consequatur quod cum? Assumenda ea magnam cumque praesentium blanditiis rerum neque quos molestias quisquam numquam libero sapiente, quam autem architecto cupiditate nemo vero pariatur dolore commodi. Voluptate rem repellat commodi ab ipsam id ducimus repellendus asperiores molestias architecto maiores in ut expedita pariatur aspernatur excepturi officia, sapiente, dicta nobis qui odio velit at? Iste explicabo sed necessitatibus voluptate quidem minus recusandae quaerat sequi, temporibus incidunt ipsa enim consequuntur sapiente sit illo facere impedit amet nulla exercitationem et quibusdam quos. Atque, consequatur! Cupiditate, exercitationem repellat.
+        </p>
+  </div>
+  <footer>
+    Copyright 3032 AbhishekCoin. All rights reserved..
+  </footer>
+</body>
+</html>
